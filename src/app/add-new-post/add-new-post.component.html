@@ -1,0 +1,13 @@
+<h2 class="text-center">Rédigez un nouvel article</h2>
+<form [formGroup]="postForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="title">Titre</label>
+    <input type="text" class="form-control" name="title" value="What is Lorem Ipsum?" formControlName="title" />
+  </div>
+  <div class="form-group">
+    <label for="content">Article</label>
+    <textarea class="form-control" name="content" formControlName="content" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</textarea>
+  </div>
+  <button class="btn btn-primary pull-right" [disabled]="userForm.invalid">
+    <i class="glyphicon glyphicon-send"></i> Poster</button>
+</form>
