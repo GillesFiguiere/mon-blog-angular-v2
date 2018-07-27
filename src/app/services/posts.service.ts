@@ -25,6 +25,7 @@ export class PostsService {
     this.posts.push(newPost);
 
     this.saveAllPost();
+    // Plus nécessaire car firebase.database().ref('/blog').on() observe les données dans firebase
     // this.emitPostSubject();
   }
 
@@ -32,6 +33,7 @@ export class PostsService {
     this.posts.splice(id, 1);
 
     this.saveAllPost();
+    // Plus nécessaire car firebase.database().ref('/blog').on() observe les données dans firebase
     // this.emitPostSubject();
   }
 
@@ -40,6 +42,7 @@ export class PostsService {
 
     this.saveAllPost();
 
+    // Plus nécessaire car firebase.database().ref('/blog').on() observe les données dans firebase
     // this.emitPostSubject();
   }
 
@@ -48,6 +51,7 @@ export class PostsService {
 
     this.saveAllPost();
 
+    // Plus nécessaire car firebase.database().ref('/blog').on() observe les données dans firebase
     // this.emitPostSubject();
   }
 
