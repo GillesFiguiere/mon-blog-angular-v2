@@ -1,3 +1,20 @@
+@media (max-width: 767.98px) {  
+    .gf-content {
+        height: calc(100vh - 116px);
+    }
+}
+
+@media (min-width: 768px) {  
+    .gf-content {
+        height: calc(100vh - 76px);
+    }
+}
+
+body {
+    height: 100vh;
+}
+
+
 .gf-header {
     padding: 0;
-} 
+}

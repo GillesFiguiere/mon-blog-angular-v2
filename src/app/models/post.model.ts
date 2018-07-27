@@ -1,13 +1,13 @@
 export class Post {
 
     constructor(
-        public title: string,
-        public content: string,
+        public title?: string,
+        public content?: string,
         public loveIts?: number,
-        public creationDate?: Date
+        public creationDate?: number
     ) {
-        this.creationDate = new Date();
-        this.loveIts = 0;
+        this.creationDate = this.creationDate ? creationDate : Date.now();
+        this.loveIts = this.loveIts ? loveIts : 0;
     }
 
     increaseLikes() {

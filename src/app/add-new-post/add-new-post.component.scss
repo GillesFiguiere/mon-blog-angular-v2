@@ -1,0 +1,15 @@
+@media (max-width: 575.98px) {  
+    .gf-form {
+        height: calc(100vh - 116px);
+    }
+}
+
+@media (min-width: 576px) {  
+    .gf-form {
+        height: calc(100vh - 76px);
+    }
+}
+
+.gf-form {
+    margin-top: 10px;
+}
